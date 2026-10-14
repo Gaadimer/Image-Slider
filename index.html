@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanilla JS Image Slider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>Kathmandu Image Slider</h1>
+
+    <!-- Only the images live here. slider.js builds the track, arrows and dots. -->
+    <div id="demo-slider" class="slider">
+      <img src="images/slide1.jpg" alt="Okhaldhunga Hills">
+      <img src="images/slide2.jpg" alt="Okhaldhunga Hills">
+      <img src="images/slide3.jpg" alt="Okhaldhunga Hills">
+      <img src="images/slide4.jpg" alt="Okhaldhunga Hills">
+      <img src="images/slide5.jpg" alt="Okhaldhunga Hills">
+    </div>
+  </main>
+
+  <script src="slider.js"></script>
+  <script>
+    new ImageSlider('#demo-slider', { duration: 600 });
+  </script>
+</body>
+</html>
